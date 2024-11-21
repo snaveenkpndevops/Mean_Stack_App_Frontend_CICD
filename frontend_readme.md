@@ -155,7 +155,7 @@ When you build the Angular application, it will use the correct environment file
 * In `app.component.ts` for dockerize application 
 
 
-    ```
+   ```
 
       import { environment } from '../environments/environment'; // Import environment
 
@@ -173,8 +173,7 @@ When you build the Angular application, it will use the correct environment file
                   console.log('Error:', error);
                }
          );
-      }
-      
+      } 
    ```
 
 * In `restaurant.service.ts` for dockerize application 
