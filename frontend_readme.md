@@ -127,6 +127,7 @@ When you build the Angular application, it will use the correct environment file
 
     * Make sure environment variables are configured inside /src/environment/environment.ts  and /src/environment/environment.ts.prod correctly.
 
+
     ```
       // /src/environment/environment.ts 
 
@@ -134,8 +135,8 @@ When you build the Angular application, it will use the correct environment file
       production: false,
       apiUrl: 'http://localhost:4000/api/restaurants'
       };
-
    ```
+
 
    ```
       // /src/environment/environment.ts.prod
@@ -144,11 +145,10 @@ When you build the Angular application, it will use the correct environment file
       production: true,
       apiUrl: 'http://localhost:4000/api/restaurants'
       };
-  
    ```
 
-
 * In `app.component.ts` for dockerize application 
+
 
     ```
       import { environment } from '../environments/environment'; // Import environment
@@ -168,10 +168,10 @@ When you build the Angular application, it will use the correct environment file
                }
          );
       }
-
       ```
 
 * In `restaurant.service.ts` for dockerize application 
+
 
    ```
       import { environment } from '../environments/environment'; // Import environment
@@ -191,8 +191,8 @@ When you build the Angular application, it will use the correct environment file
                }
          );
       }
-
    ```
+
 
 1. Check Dockerfile -->  use .dockerignore (to ignore node_modules and other unwanted files copying from local to docker image)
 
@@ -217,22 +217,20 @@ When you build the Angular application, it will use the correct environment file
         try_files $uri =404;
     }
    }
-
    ```
 
 2. now we are going to build the docker image. --> cd frontend
 
-    ```
 
+    ```
     docker build -t restaurant-frontend .      // Docker command to build the frontend docker image
-
     ```
+
 3. Once the docker image for frontend is created. Now we are going to run the docker container from docker image. we can either use docker commands (or) docker compose yml file. 
 
     `Docker commands:`
 
-    ```
-       
+    ``` 
     docker run -d --name frontend --network mean-stack-network -p 4200:80 restaurant-frontend:latest
 
     // [The above command will run frontend-container inside mean-stack-network with port number as nginx default port 80 and we can access by 4200 port from our localhost]
@@ -244,16 +242,16 @@ When you build the Angular application, it will use the correct environment file
     docker rmi {Image name (or) ID}         // command to remove the docker Image
 
     ```
+
     The problem with docker commands is it is difficult to pass environment from docker commands. we can do that but it increases the size of the command instead we can use `docker-compose.yml` which is a best practice.
 
     So check `docker-compose.yml` instead of using the docker commands.
 
-    ```
 
+    ```
     docker-compose up -d   // This command will run the docker-compose file and start the container.
 
     docker-compose down    //  This command will stop the container.
-
     ```
 
 ### Checking:
@@ -268,6 +266,7 @@ When you build the Angular application, it will use the correct environment file
 
 2. `server.ts` for DNS and localhost:port.    -->  Just for your information.
 
+
    ```
       function run(): void {
    const port = process.env['PORT'] || 4000;
@@ -278,7 +277,6 @@ When you build the Angular application, it will use the correct environment file
       console.log(`Node Express server listening on http://localhost:${port}`);
    });
    }
-
    ```
 
 3. We are using angular default port 4200 to access our frontend. To change the port we need to edit `angular.json` file. Also to change the dist path  we need to edit `angular.json` file.
