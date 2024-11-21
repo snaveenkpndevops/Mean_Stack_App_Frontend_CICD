@@ -129,7 +129,7 @@ When you build the Angular application, it will use the correct environment file
    * Make sure environment variables are configured inside /src/environment/environment.ts  and /src/environment/environment.ts.prod correctly.
 
 
-    ```
+   ```
 
       // /src/environment/environment.ts 
 
