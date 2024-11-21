@@ -39,6 +39,7 @@ MEAN STACK  --> Mongo Express Angular Node.js
    * Best practice is to use environment variable and get the private apiUrl from enviroment variables. so in `app.component.ts` and in `restaurant.service.ts`. 
 
       create a /src/environment/environment.ts      -->  for dev environment
+
       create a /src/environment/environment.ts.prod    -->  for prod environment
 
       ```
@@ -123,9 +124,9 @@ When you build the Angular application, it will use the correct environment file
 
 ### Prerequisite:
 
-    * make sure your docker-desktop application is running.
+   * make sure your docker-desktop application is running.
 
-    * Make sure environment variables are configured inside /src/environment/environment.ts  and /src/environment/environment.ts.prod correctly.
+   * Make sure environment variables are configured inside /src/environment/environment.ts  and /src/environment/environment.ts.prod correctly.
 
 
     ```
