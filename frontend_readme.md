@@ -63,6 +63,7 @@ MEAN STACK  --> Mongo Express Angular Node.js
 When you build the Angular application, it will use the correct environment file based on the build configuration. For example:
 
 `ng build --prod    // This will use environment.prod.ts`
+
 `ng build           // This will use environment.ts`
 
    * In `restaurant.service.ts` we need to import environment and update the private apiUrl.
