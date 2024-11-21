@@ -130,7 +130,7 @@ When you build the Angular application, it will use the correct environment file
 
 
     ```
-    
+
       // /src/environment/environment.ts 
 
       export const environment = {
@@ -156,6 +156,7 @@ When you build the Angular application, it will use the correct environment file
 
 
     ```
+
       import { environment } from '../environments/environment'; // Import environment
 
          getRestaurants() {
@@ -173,7 +174,8 @@ When you build the Angular application, it will use the correct environment file
                }
          );
       }
-      ```
+      
+   ```
 
 * In `restaurant.service.ts` for dockerize application 
 
