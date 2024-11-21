@@ -130,22 +130,26 @@ When you build the Angular application, it will use the correct environment file
 
 
     ```
+    
       // /src/environment/environment.ts 
 
       export const environment = {
       production: false,
       apiUrl: 'http://localhost:4000/api/restaurants'
       };
+
    ```
 
 
    ```
+
       // /src/environment/environment.ts.prod
       
       export const environment = {
       production: true,
       apiUrl: 'http://localhost:4000/api/restaurants'
       };
+
    ```
 
 * In `app.component.ts` for dockerize application 
