@@ -326,6 +326,8 @@ For kubernetes deployment it is good to use minikube for testing. But the real p
 
 ## Steps to deploy our code in eks/aks cluster:
 
+Before Deploying the frontend yaml, deploy the backend and mongo db yaml. Check `Backend Repo URL : https://github.com/snaveenkpndevops/MEAN_Stack_Restaurant_App_Backend`
+
 1. Create a Eks Public Cluster.
 2. Create a Node Group with spot instance inorder to reduce eks cost.
 3. SG --> Allow All Traffic
@@ -439,6 +441,8 @@ For kubernetes deployment it is good to use minikube for testing. But the real p
    ```
 
    ```
+   //src/app/app.component.ts
+   
    getRestaurants() {
         // this.http.get('http://host.docker.internal:4000/api/restaurants')  
         // this.http.get('http://localhost:4000/api/restaurants')       
