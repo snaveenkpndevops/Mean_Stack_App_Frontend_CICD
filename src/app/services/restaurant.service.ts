@@ -10,8 +10,10 @@ import { environment } from '../../environments/environment'; // Import environm
     providedIn: 'root',
 })
 export class RestaurantService {
-    private apiUrl =  environment.apiUrl || 'http://localhost:4000/api/restaurants';
+    //private apiUrl =  environment.apiUrl || 'http://backend-service.restaurant.svc.cluster.local:4000/api/restaurants';
     //private apiUrl = 'http://host.docker.internal:4000/api/restaurants';
+    //private apiUrl = environment.apiUrl; // Use environment.apiUrl directly 'http://backend-service.restaurant.svc.cluster.local:4000/api/restaurants'
+    private apiUrl = environment.apiUrl;
 
     constructor(private http: HttpClient) { }
 

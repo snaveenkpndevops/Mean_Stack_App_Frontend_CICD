@@ -54,7 +54,9 @@ export class AppComponent implements OnInit {
 
     getRestaurants() {
         // this.http.get('http://host.docker.internal:4000/api/restaurants')  
-        // this.http.get('http://localhost:4000/api/restaurants')
+        // this.http.get('http://localhost:4000/api/restaurants')       
+        //this.http.get(this.apiUrl).subscribe(
+        
         this.http.get(this.apiUrl).subscribe(
             (response: any) => {
                 if (response.success) {
