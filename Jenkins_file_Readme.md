@@ -1,6 +1,6 @@
 ### prerequisite:
 
-  * Insatll Java in your local machine.
+  * Install Java in your local machine.
   * Install Jenkins in your local machine.
   * Install docker-desktop in your local machine and open the docker-desktop. Since we are not using any agent, so all the pipeline steps will be running from our local machine. We can use docker agent to run this pipeline which is a best practice. But for this project we are not using any agent.
 
@@ -73,3 +73,8 @@
   ### Images:
 
   ![Jenkins Logo](./images/jenkins_image/pipeline%20result.png)
+
+
+### Note:
+
+1. You can also add additional steps in the pipeline like static code analysis using sonarqube, docker image scanning using trivy. 
