@@ -1,3 +1,9 @@
+### prerequisite:
+
+  * Insatll Java in your local machine.
+  * Install Jenkins in your local machine.
+  * Install docker-desktop in your local machine and open the docker-desktop. Since we are not using any agent, so all the pipeline steps will be running from our local machine. We can use docker agent to run this pipeline which is a best practice. But for this project we are not using any agent.
+
 1. Create a Jenkins pipeline Project.
 2. In Manage plugins --> Install `Generic Webhook Trigger` plugin
 3. Read this Document for Github Webhook Configuration -->  `https://www.geeksforgeeks.org/what-is-webhooks-in-jenkins/` (or) `https://medium.com/@sangeetv09/how-to-configure-webhook-in-github-and-jenkins-for-automatic-trigger-with-cicd-pipeline-34133e9de0ea`
@@ -50,7 +56,7 @@
   ![Jenkins Logo](./images/jenkins_image/Global%20Variable%20jenkins.png)
 
 
-  * Pipeline Configuration.
+  * Pipeline Configuration Steps.
 
 
   ### Images:
