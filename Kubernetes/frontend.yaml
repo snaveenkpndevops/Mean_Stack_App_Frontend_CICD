@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: snaveenkpn/restaurant-frontend:1 # Replace with your frontend image
+        image: snaveenkpn/restaurant-frontend:<initial-version> # Only this tag will change
         ports:
         - containerPort: 80  # Expose the frontend port
 
