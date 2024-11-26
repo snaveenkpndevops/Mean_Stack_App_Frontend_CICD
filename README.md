@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+## CI/CD Readme:
+
+1. This Repo has both jenkins CI Pipeline and Gitlab CI Pipeline. If you are using `jenkins` then please read the `jenkins_file_Readme.md`, if you are using `Gitlab` then please read the `gitlab_readme.md`.
+
+2. For CD part we will be using `ArgoCD`. Please Read `ArgoCD_readme.md` for CD. We are going to deploy our application in `Eks Cluster`.
