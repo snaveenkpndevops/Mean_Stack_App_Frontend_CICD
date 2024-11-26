@@ -64,3 +64,18 @@
 ![Gitlab Logo](./images/Gitlab_image/Gitlab_cicd_project_env2.png)
 
 ![Gitlab Logo](./images/Gitlab_image/Gitlab_cicd_project_env3.png) 
+
+
+Instead of `project variable` we can also use `Group variable (Global variable)`
+
+### Images:
+
+![Gitlab Logo](./images/Gitlab_image/Gitlab_cicd_project_Global_env1.png)   
+
+![Gitlab Logo](./images/Gitlab_image/Gitlab_cicd_project_Global_env2.png)
+
+![Gitlab Logo](./images/Gitlab_image/Gitlab_cicd_project_env1.png)   
+
+![Gitlab Logo](./images/Gitlab_image/Gitlab_cicd_project_env2.png)
+
+![Gitlab Logo](./images/Gitlab_image/Gitlab_cicd_project_env3.png) 
